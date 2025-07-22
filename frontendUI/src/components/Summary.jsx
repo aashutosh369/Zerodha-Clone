@@ -2,10 +2,13 @@
 import React from "react";
 
 function Summary() {
+  const username = localStorage.getItem("username") || "User";
   return (
+    
     <div style={{ marginTop: "62px", padding: "0 15px" }}>
       <div style={{ marginTop: "1rem" }}>
-        <h2 style={{ fontSize: "2rem" }}>Hi, Ashutosh</h2>
+        
+        <h2 style={{ fontSize: "2rem" }}>Hi, {username} </h2>
       </div>
 
       <div

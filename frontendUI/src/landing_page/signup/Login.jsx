@@ -16,10 +16,19 @@ const Login = () => {
         console.log(result);
         setEmail("");
         setPassword("");
+
         if (result.data.status === "Success") {
+          // ✅ Login success — username received from backend
           localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("username", result.data.username);
           navigate("/home");
+        } else {
+          alert(result.data.status); // User Not Found / Incorrect Password
         }
+      })
+      .catch((err) => {
+        console.error("Login error:", err);
+        alert("Login failed. Please try again.");
       });
   };
 
