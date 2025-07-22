@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleSignupClick = () => {
+    navigate("/signup");
+  };
   return (
     <div className="container">
       <div
@@ -44,26 +50,28 @@ function Hero() {
             maxWidth: "600px",
           }}
         >
-          Online platform to invest in stocks, derivatives, mutual funds, and more...
+          Online platform to invest in stocks, derivatives, mutual funds, and
+          more...
         </p>
 
         {/* Signup Button */}
         <button
-  className="btn btn-primary mt-4"
-  id="signupHeroButton"
-  style={{
-    padding: "10px 30px",
-    fontSize: "1rem",
-    borderRadius: "6px",
-    whiteSpace: "normal",     
-    wordWrap: "break-word",    
-    textAlign: "center",       
-    width: "100%",        
-    maxWidth: "250px",      
-  }}
->
-  Signup Now
-</button>
+          onClick={handleSignupClick} 
+          className="btn btn-primary mt-4"
+          id="signupHeroButton"
+          style={{
+            padding: "10px 30px",
+            fontSize: "1rem",
+            borderRadius: "6px",
+            whiteSpace: "normal",
+            wordWrap: "break-word",
+            textAlign: "center",
+            width: "100%",
+            maxWidth: "250px",
+          }}
+        >
+          Signup Now
+        </button>
       </div>
     </div>
   );
