@@ -344,7 +344,7 @@ app.post("/login",(req,res) => {
   .then((user) => {
     if(user) {
       if(user.password === password){
-        res.json({status : "Success", massage : "Login Successfull!"})
+        res.json({status : "Success", massage : "Login Successfull!", username: user.name})
       }else{
         res.json("Incorrect Password!")
       }
