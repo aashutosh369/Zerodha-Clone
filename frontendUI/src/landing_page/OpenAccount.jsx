@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function OpenAccount() {
+
+   const navigate = useNavigate();
+
+  const handleSignupClick = () => {
+    navigate("/signup"); 
+  };
   return (
     <div
       className="container mt-5 mb-5"
@@ -18,6 +25,7 @@ function OpenAccount() {
           </p>
 
           <button
+            onClick={handleSignupClick} 
             className="btn btn-primary mt-4"
             id="signupHeroButton"
             style={{
