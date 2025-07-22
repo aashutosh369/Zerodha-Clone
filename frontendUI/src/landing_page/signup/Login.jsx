@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3002/login", { email, password })
+      .post("https://zerodha-clone-r223.onrender.com/login", { email, password })
       .then((result) => {
         console.log(result);
         setEmail("");

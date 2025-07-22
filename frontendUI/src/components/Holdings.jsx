@@ -21,7 +21,7 @@ function Holdings() {
   const [holdings, setHoldings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3002/allHoldings/")
+    fetch("https://zerodha-clone-r223.onrender.com/allHoldings/")
       .then((res) => res.json())
       .then((holdings) => setHoldings(holdings))
       .catch((err) => console.log("Error in fetching holdings", err));

@@ -14,7 +14,7 @@ function WatchList() {
   // db se dsta fetch kr ne ke liye
   const [watchlist, setWatchlist] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3002/watchlistStocks").then((res) => res.json()).then((resData) => setWatchlist(resData)).catch((err) => console.log("Error in fetching data!",err));
+    fetch("https://zerodha-clone-r223.onrender.com/watchlistStocks").then((res) => res.json()).then((resData) => setWatchlist(resData)).catch((err) => console.log("Error in fetching data!",err));
   }, []);
 
   return (

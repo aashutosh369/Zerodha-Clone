@@ -5,7 +5,7 @@ function Positions() {
   // db se data fetch kr ne ke liye
   const [positions, setPositions] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3002/allPositions/")
+    fetch("https://zerodha-clone-r223.onrender.com/allPositions/")
       .then((res) => res.json())
       .then((resJsonData) => setPositions(resJsonData))
       .catch((err) => console.log("Position data not found!",err));

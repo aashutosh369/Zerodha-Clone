@@ -11,7 +11,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3002/signup/", { name, email, password })
+      .post("https://zerodha-clone-r223.onrender.com/signup/", { name, email, password })
       .then((result) => {
         console.log(result);
         alert("Signup Successful! You can now login.");
