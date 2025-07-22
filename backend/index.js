@@ -346,10 +346,10 @@ app.post("/login",(req,res) => {
       if(user.password === password){
         res.json({status : "Success", massage : "Login Successfull!", username: user.name})
       }else{
-        res.json("Incorrect Password!")
+         res.json({ status: "Incorrect Password" });
       }
     }else{
-      res.json("User do not exist!");
+      res.json({ status: "User Not Found" });
     }
   })
 })
