@@ -72,6 +72,7 @@ function Hero() {
         >
           Signup Now
         </button>
+        
       </div>
     </div>
   );
