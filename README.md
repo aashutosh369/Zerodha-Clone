@@ -4,8 +4,8 @@ A full-stack clone of Zerodha, India's largest stock trading platform — built 
 This project showcases a complete responsive frontend, functional dashboard, live charts using backend data, and full deployment.
  
  Live Demo :-
-   Frontend: [View on Vercel] (https://your-vercel-link.vercel.app)
-   Backend: [View on Render] (https://your-render-backend-link.onrender.com)
+   Frontend: [View on Vercel] (https://zerodha-clone-gamma-nine.vercel.app/)
+   Backend: [View on Render] (https://zerodha-clone-r223.onrender.com)
 
  Features :-
    Basic login flow (protected dashboard)
@@ -26,11 +26,28 @@ This project showcases a complete responsive frontend, functional dashboard, liv
       Vercel (Frontend), Render (Backend)
       
   Project Folder Structure :-
-    zerodhaClone
+    zerodha-Clone
       frontedUI
       backend
 
+  How to run the project :-
+      Backend Setup 
+        cd backend
+        npm install
+        npm start
+      Frontend Setup 
+        cd frontend
+        npm install
+        npm start
 
+ Author
+     Made by **Ashutosh Kumar**  
+     ashutoshkr23131@gmail.com  
+     [LinkedIn] ( linkedin.com/in/ashutosh-kumar-22b089254 )
+
+---
+
+If you like this project, don’t forget to give it a ⭐ on GitHub!
 
 
 
