@@ -11,13 +11,14 @@ function Team() {
         {/* IMAGE */}
         <div className="col-12 col-md-4 order-1 order-md-1 mb-3 mb-md-0 d-flex justify-content-center">
           <img
-            src="media/images/ashutoshPhoto.png"
+            src="media\images\ashutoshPhotoMe.png"
             alt="ASHUTOSH KUMAR"
             className="rounded-circle"
             style={{
               width: "200px",
               height: "200px",
               objectFit: "cover",
+              marginTop: "-30px"
             }}
           />
         </div>
